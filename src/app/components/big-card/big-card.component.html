@@ -1,15 +1,15 @@
 <div class="container__big-card">
     <div class="big-card__photo">
-        <img src="https://blog.escoladocredito.com.br/wp-content/uploads/2022/11/placeholder-19.png"
+        <img src="{{photoCover}}"
         alt="" 
         height="300px"
         srcset="">
 
     </div>
     <div class="big-card__title">
-        <h1><a href="#">Saiu a nova versão do angular</a></h1>
+        <h1><a [routerLink]="['content',id]">{{ cardTitle }}</a></h1>
     </div>
     <div class="big-card_descrição">
-        <p>bla bla bla bla</p>
+        <p>{{ cardDescription}}</p>
     </div>
 </div>
